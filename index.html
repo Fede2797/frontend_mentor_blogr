@@ -39,73 +39,192 @@
   Sign Up -->
 
   <!-- Intro -->
-  <div class="bg-gradient-to-tr from-[#FF6666] to-[#FF7A85] rounded-bl-[90px]">
-    <div class="w-full h-full bg-[position:35%_33%] flex flex-col px-6 pt-16 rounded-bl-[90px] pb-32" style="background-image: url('/images/bg-pattern-intro-mobile.svg')">
-            <!-- Navbar -->
-            <div class="row flex flex-row justify-between">
-                <img src="/images/logo.svg" alt="">
-                <img class="h-5 w-10 self-center" src="/images/icon-hamburger.svg" alt="">
+  <section class="bg-gradient-to-tr from-[#FF6666] to-[#FF7A85] rounded-bl-[90px]">
+    <!-- <div class="w-full h-full bg-[position:35%_33%] flex flex-col px-6 pt-16 rounded-bl-[90px] pb-32" style="background-image: url('/images/bg-pattern-intro-mobile.svg')"> -->
+    <div class="w-full h-full bg-[position:35%_33%] flex flex-col px-6 pt-16 rounded-bl-[90px] pb-32
+    bg-[url('/images/bg-pattern-intro-mobile.svg')] 
+    md:bg-[url('/images/bg-pattern-intro-desktop.svg')] md:bg-[position:25%50%] md:px-0">
+        <!-- Navbar -->
+        <div class="flex flex-row justify-between md:max-w-4/5 lg:max-w-full lg:mx-32 items-center">
+            <img class="md:mr-12" src="/images/logo.svg" alt="">
+            <div class="hidden md:block w-full">
+                <div class="flex justify-between">
+                    <div class="flex gap-4 min-w-[330px]">
+                        <select id="product" class="bg-transparent text-white focus:outline-none w-full font-bold">
+                            <option selected class="text-black">Product</option>
+                            <option class="text-black">Overview</option>
+                            <option class="text-black">Pricing</option>
+                            <option class="text-black">Marketplace</option>
+                            <option class="text-black">Features</option>
+                            <option class="text-black">Integrations</option>
+                        </select>
+                        <select id="company" class="bg-transparent text-white focus:outline-none w-full font-bold">
+                            <option selected class="text-black">Company</option>
+                            <option class="text-black">About</option>
+                            <option class="text-black">Team</option>
+                            <option class="text-black">Blog</option>
+                            <option class="text-black">Careers</option>
+                        </select>
+                        <select id="connect" class="bg-transparent text-white focus:outline-none w-full font-bold">
+                            <option selected class="text-black">Connect</option>
+                            <option class="text-black">Contact</option>
+                            <option class="text-black">Newsletter</option>
+                            <option class="text-black">LinkedIn</option>
+                        </select>
+                    </div>
+                    <div class="flex w-full gap-4 justify-end items-center">
+                        <div>
+                            <button class="row text-white font-[Overpass] font-semibold rounded-full text-lg p-4">Login</button>
+                        </div>
+                        <div>
+                            <button class="row bg-white text-[#FF6666] font-[Overpass] font-semibold rounded-full text-lg
+                            px-12 py-2 min-w-[161px]">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Title and subtitle -->
-            <h1 class="row pt-24 text-4xl text-white text-center font-[Overpass] font-semibold">A modern publishing platform</h1>
-            <h2 class="row mt-4 text-lg text-white text-center font-[Ubuntu] font-thin">Grow your audience and build your online brand</h2>
-            <!-- Buttons -->
-            <div class="flex flex-row gap-6 px-4 mt-10">
-                <button class="row bg-white text-[#FF6666] h-12 w-full font-[Overpass] font-semibold rounded-full text-lg">Start for Free</button>
-                <button class="row text-white h-12 w-full font-[Overpass] font-semibold border border-white rounded-full text-lg">Learn More</button>
+            <a href="#">
+                <img class="md:hidden h-5 w-10 self-center" src="/images/icon-hamburger.svg" alt="">
+            </a>
+        </div>
+        <!-- Title and subtitle -->
+        <h1 class="row pt-24 text-4xl text-white text-center font-[Overpass] font-semibold">A modern publishing platform</h1>
+        <h2 class="row mt-4 text-lg text-white text-center font-[Ubuntu] font-thin">Grow your audience and build your online brand</h2>
+        <!-- Buttons -->
+        <div class="flex flex-row gap-6 px-4 mt-10 justify-center">
+            <button class="row bg-white text-[#FF6666] py-2 px-4  font-[Overpass] font-semibold rounded-full text-lg">Start for Free</button>
+            <button class="row text-white py-2 px-4  font-[Overpass] font-semibold border border-white rounded-full text-lg">Learn More</button>
+        </div>
+    </div>
+  </section>
+
+  <!-- Articles section -->
+
+  <!-- First Article -->
+  <section class="mt-24 md:p-32">
+    <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass]">Designed for the future</h1>
+    <div class="flex flex-col gap-2 items-center md:flex-row-reverse">
+        <div>
+            <div class="pt-16 pb-8 overflow-hidden">
+                <img class="scale-[110%]" src="/images/illustration-editor-mobile.svg" alt="">
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="p-10 md:px-0">
+                <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass] leading-8 md:text-left">Introducing an extensible editor</h1>
+                <p class="text-center mt-4 font-thin font-[Overpass] leading-7 md:text-left">
+                    Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+                    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+                    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+                    change the looks of a blog.
+                </p>
+            </div>
+            <div class="px-10 md:px-0">
+                <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass] leading-8 md:text-left">Robust content management</h1>
+                <p class="text-center mt-4 font-thin font-[Overpass] leading-7 md:text-left">
+                    Flexible content management enables users to easily move through posts. Increase the usability of your blog
+                    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                </p>
             </div>
         </div>
     </div>
+  </section>
 
-  Designed for the future
+  <!-- Second Article -->
+  <section>
+      <!-- <div class="relative w-full h-96 mt-64 bg-[#3F4164] bg-contain bg-[position:-50%-50%] bg-repeat-space" style="background-image: url('/images/bg-pattern-circles.svg')"> -->
+        <div class="telative flex flex-col relative w-full mt-64 bg-[#3F4164] rounded-tr-[90px] rounded-bl-[90px] 
+        text-center text-white items-center">
+            <!-- <img src="./images/bg-pattern-circles.svg" alt=""> -->
+            <div class="absolute -translate-y-1/2">
+                <img class="" src="images/illustration-phones.svg" alt="">
+            </div>
+            <div class="pt-56 pb-24 px-8">
+                <h1 class="text-4xl font-[Overpass] font-semibold pb-6">State of the Art Infrastructure</h1>
+                <p class="font-thin font-[Overpass] leading-7">
+                    With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+                    This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                </p>
+            </div>
+        </div>
+  </section>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+  <!-- Third Arcticle -->
+  <section class="mt-8">
+    <div class="flex flex-col items-center gap-8">
+        <div class="py-16 overflow-hidden">
+            <img class="scale-125" src="images/illustration-laptop-mobile.svg" alt="">
+        </div>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        <div class="row px-10">
+            <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass] leading-8">Free, open, simple</h1>
+            <p class="text-center mt-4 font-thin font-[Overpass] leading-7">
+                Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+                features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+                and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            </p>
+        </div>
+    
+        <div class="row px-10">
+            <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass] leading-8">Powerful tooling</h1>
+            <p class="text-center mt-4 font-thin font-[Overpass] leading-7">
+                Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+            </p>
+        </div>
+    </div>
+  </section>
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+  <!-- Footer -->
+  <footer>
+    <div class="flex flex-col bg-[#25252D] rounded-tr-[90px] text-white font-[Ubuntu] items-center p-16
+    text-lg gap-12 mt-24">
+        <div class="mb-8">
+            <img class="scale-125" src="images/logo.svg" alt="">
+        </div>
+        <div class="flex flex-col items-center gap-2">
+            <h4 class="font-semibold mb-4">Product</h4>
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a>
+        </div>
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+        <div class="flex flex-col items-center gap-2">
+            <h4 class="font-semibold mb-4">Company</h4>
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+        </div>
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
+        <div class="flex flex-col items-center gap-2">
+            <h4 class="font-semibold mb-4">Connect</h4>
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Federico Passarelli</a>.
+        </div>
+    </div>
+  </footer>
   
-  Contact
-  Newsletter
-  LinkedIn
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+  
+
+  
+
+  <!-- 
+  
+
+  
+  
+
+   -->
+
 </body>
 </html>
