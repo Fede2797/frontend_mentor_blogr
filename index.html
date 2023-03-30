@@ -101,15 +101,15 @@
   <!-- Articles section -->
 
   <!-- First Article -->
-  <section class="mt-24 md:p-32">
-    <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass]">Designed for the future</h1>
-    <div class="flex flex-col gap-2 items-center md:flex-row-reverse">
-        <div>
-            <div class="pt-16 pb-8 overflow-hidden">
-                <img class="scale-[110%]" src="/images/illustration-editor-mobile.svg" alt="">
+  <section class="mt-24 md:p-32 overflow-hidden">
+    <h1 class="text-center text-[#1F3F5B] text-[36px] font-semibold font-[Overpass] md:mb-20">Designed for the future</h1>
+    <div class="flex flex-col gap-2 items-center md:flex-row-reverse md:relative">
+        <div class="md:w-full">
+            <div class="pt-16 pb-8 overflow-hidden md:overflow-visible md:absolute md:-translate-y-1/2 md:translate-x-2/3">
+                <img class="scale-[110%] md:scale-[180%] md:object-cover" src="/images/illustration-editor-mobile.svg" alt="">
             </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col md:w-full">
             <div class="p-10 md:px-0">
                 <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass] leading-8 md:text-left">Introducing an extensible editor</h1>
                 <p class="text-center mt-4 font-thin font-[Overpass] leading-7 md:text-left">
@@ -131,22 +131,37 @@
   </section>
 
   <!-- Second Article -->
-  <section>
-      <!-- <div class="relative w-full h-96 mt-64 bg-[#3F4164] bg-contain bg-[position:-50%-50%] bg-repeat-space" style="background-image: url('/images/bg-pattern-circles.svg')"> -->
-        <div class="telative flex flex-col relative w-full mt-64 bg-[#3F4164] rounded-tr-[90px] rounded-bl-[90px] 
-        text-center text-white items-center">
-            <!-- <img src="./images/bg-pattern-circles.svg" alt=""> -->
-            <div class="absolute -translate-y-1/2">
-                <img class="" src="images/illustration-phones.svg" alt="">
+  <!-- <section>
+        <div class="relative flex flex-col w-full mt-64 bg-[#3F4164] rounded-tr-[90px] rounded-bl-[90px] 
+        text-center text-white items-center md:flex-row md:mt-0 md:px-32 md:py-28">
+            <div class="absolute -translate-y-1/2 md:translate-y-0 md:-translate-x-[4.3rem]">
+                <img class="md:scale-90" src="images/illustration-phones.svg" alt="">
             </div>
-            <div class="pt-56 pb-24 px-8">
-                <h1 class="text-4xl font-[Overpass] font-semibold pb-6">State of the Art Infrastructure</h1>
-                <p class="font-thin font-[Overpass] leading-7">
+            <div class="md:w-full"></div>
+            <div class="pt-56 pb-24 px-8 md:p-0 md:w-full">
+                <h1 class="text-4xl font-[Overpass] font-semibold pb-6 md:text-left">State of the Art Infrastructure</h1>
+                <p class="font-thin font-[Overpass] leading-7 md:text-left">
                     With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
                     This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
                 </p>
             </div>
         </div>
+  </section> -->
+  <section class="relative">
+    <div class="absolute bg-[#3F4164] rounded-tr-[90px] rounded-bl-[90px] w-full mt-64 z-[-1]
+    md:mt-0 md:top-[15%] md:py-48">
+    </div>
+    
+    <div class="flex flex-col items-center gap-12 px-12 lg:flex-row">
+        <div class="lg:w-full"><img class="" src="images/illustration-phones.svg" alt=""></div>
+        <div class="pt-56 pb-24 px-8 lg:p-0 lg:w-full text-center text-black w-full">
+            <h1 class="text-4xl font-[Overpass] text-white font-semibold pb-6 md:text-left">State of the Art Infrastructure</h1>
+            <p class="font-thin font-[Overpass] text-white leading-7 md:text-left">
+                With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+                This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+            </p>
+        </div>
+    </div>
   </section>
 
   <!-- Third Arcticle -->
