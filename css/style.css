@@ -939,6 +939,14 @@ video {
   background-image: url('images/bg-pattern-intro-mobile.svg');
 }
 
+.bg-\[url\(\'\.\.\/images\/bg-pattern-circles\.svg\'\)\] {
+  background-image: url('../images/bg-pattern-circles.svg');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-pattern-intro-mobile\.svg\'\)\] {
+  background-image: url('../images/bg-pattern-intro-mobile.svg');
+}
+
 .from-\[\#FF6666\] {
   --tw-gradient-from: #FF6666;
   --tw-gradient-to: rgb(255 102 102 / 0);
@@ -1353,6 +1361,10 @@ video {
 
   .md\:bg-\[url\(\'images\/bg-pattern-intro-desktop\.svg\'\)\] {
     background-image: url('images/bg-pattern-intro-desktop.svg');
+  }
+
+  .md\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-desktop\.svg\'\)\] {
+    background-image: url('../images/bg-pattern-intro-desktop.svg');
   }
 
   .md\:bg-\[length\:1200px\] {
