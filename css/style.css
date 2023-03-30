@@ -1367,6 +1367,10 @@ video {
     background-image: url('../images/bg-pattern-intro-desktop.svg');
   }
 
+  .md\:bg-\[url\(\'\.\/images\/bg-pattern-intro-desktop\.svg\'\)\] {
+    background-image: url('./images/bg-pattern-intro-desktop.svg');
+  }
+
   .md\:bg-\[length\:1200px\] {
     background-size: 1200px;
   }
