@@ -13,44 +13,20 @@
     <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body class="w-full">
-    <!-- 
-    Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up -->
 
   <!-- Intro -->
-  <section class="bg-gradient-to-tr from-[#FF6666] to-[#FF7A85] rounded-bl-[90px] overflow-hidden">
+  <section class="bg-gradient-to-b lg:bg-gradient-to-r from-[#ff8f70] to-[#ff3d54] rounded-bl-[90px] overflow-hidden">
     <!-- <div class="w-full h-full bg-[position:35%_33%] flex flex-col px-6 pt-16 rounded-bl-[90px] pb-32" style="background-image: url('/images/bg-pattern-intro-mobile.svg')"> -->
     <div class="w-full h-full bg-[position:35%_33%] flex flex-col px-6 pt-16 rounded-bl-[90px] pb-32
     bg-[url('/images/bg-pattern-intro-mobile.svg')] 
     md:bg-[url('/images/bg-pattern-intro-desktop.svg')] md:bg-[position:25%50%] ">
         <!-- Navbar -->
         <div class="flex flex-row justify-between md:max-w-4/5 lg:max-w-full lg:mx-32 items-center">
-            <img class="md:mr-8" src="/images/logo.svg" alt="">
+            <a href="#"><img class="md:mr-8" src="/images/logo.svg" alt=""></a>
             <div class="hidden md:block w-full">
                 <div class="flex justify-between">
                     <div class="flex gap-4 min-w-[330px]">
-                        <select id="product" class="bg-transparent text-white focus:outline-none w-full font-bold">
+                        <select id="product" class="bg-transparent text-white focus:outline-none w-full font-bold hover:cursor-pointer">
                             <option selected class="text-black">Product</option>
                             <option class="text-black">Overview</option>
                             <option class="text-black">Pricing</option>
@@ -58,14 +34,14 @@
                             <option class="text-black">Features</option>
                             <option class="text-black">Integrations</option>
                         </select>
-                        <select id="company" class="bg-transparent text-white focus:outline-none w-full font-bold">
+                        <select id="company" class="bg-transparent text-white focus:outline-none w-full font-bold hover:cursor-pointer">
                             <option selected class="text-black">Company</option>
                             <option class="text-black">About</option>
                             <option class="text-black">Team</option>
                             <option class="text-black">Blog</option>
                             <option class="text-black">Careers</option>
                         </select>
-                        <select id="connect" class="bg-transparent text-white focus:outline-none w-full font-bold">
+                        <select id="connect" class="bg-transparent text-white focus:outline-none w-full font-bold hover:cursor-pointer">
                             <option selected class="text-black">Connect</option>
                             <option class="text-black">Contact</option>
                             <option class="text-black">Newsletter</option>
@@ -87,9 +63,15 @@
                 <img class="md:hidden h-5 w-10 self-center" src="/images/icon-hamburger.svg" alt="">
             </a>
         </div>
+
         <!-- Title and subtitle -->
-        <h1 class="row pt-24 text-4xl text-white text-center font-[Overpass] font-semibold">A modern publishing platform</h1>
-        <h2 class="row mt-4 text-lg text-white text-center font-[Ubuntu] font-thin">Grow your audience and build your online brand</h2>
+        <h1 class="row pt-28 text-4xl text-white text-center font-[Overpass] font-semibold md:text-6xl">
+            A modern publishing platform
+        </h1>
+        <h2 class="row mt-4 text-lg text-white text-center font-[Ubuntu] font-thin">
+            Grow your audience and build your online brand
+        </h2>
+
         <!-- Buttons -->
         <div class="flex flex-row gap-6 px-4 mt-10 justify-center">
             <button class="row bg-white text-[#FF6666] py-2 px-4  font-[Overpass] font-semibold rounded-full text-lg">Start for Free</button>
@@ -101,7 +83,7 @@
   <!-- Articles section -->
 
   <!-- First Article -->
-  <section class="mt-24 md:p-32 md:pt-12 overflow-hidden">
+  <section class="mt-24 md:p-32 md:pt-12 overflow-hidden xl:px-60">
     <h1 class="text-center text-[#1F3F5B] text-[36px] font-semibold font-[Overpass] md:mb-20">Designed for the future</h1>
     <div class="flex flex-col gap-2 items-center md:flex-row-reverse md:relative">
         <div class="md:w-full">
@@ -130,12 +112,13 @@
     </div>
   </section>
 
+  <!-- Second Article -->
   <section class="relative mt-24 md:mt-0">
-    <div class="absolute bg-[#3F4164] rounded-tr-[90px] rounded-bl-[90px] w-full z-[-1]
+    <div class="absolute bg-gradient-to-b from-[#2c2d3f] to-[#3f4164] rounded-tr-[90px] rounded-bl-[90px] w-full z-[-1]
     mt-0 top-[15%] py-96 md:py-[320px] lg:py-48">
     </div>
     
-    <div class="flex flex-col items-center gap-12 md:gap-0 px-12 lg:flex-row">
+    <div class="flex flex-col items-center gap-12 md:gap-0 px-12 lg:flex-row xl:px-40">
         <div class="md:max-w-[60%] lg:w-full lg:max-w-none lg:pl-10">
             <img class="scale-125 md:scale-100" src="images/illustration-phones.svg" alt="">
         </div>
@@ -157,7 +140,7 @@
         </div>
 
         <div class="flex flex-col items-center gap-8 lg:gap-20 lg:w-1/2">
-            <div class="row px-12 lg:pl-0 lg:space-y-8">
+            <div class="row px-12 lg:pl-0 lg:space-y-8 xl:pr-32">
                 <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass] leading-8 lg:text-left">Free, open, simple</h1>
                 <p class="text-center mt-4 font-thin font-[Overpass] leading-7 lg:text-left">
                     Blogr is a free and open source application backed by a large community of helpful developers. It supports
@@ -165,7 +148,7 @@
                     and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
                 </p>
             </div>
-            <div class="row px-12 lg:pl-0 lg:space-y-8">
+            <div class="row px-12 lg:pl-0 lg:space-y-8 xl:pr-32">
                 <h1 class="text-center text-[#1F3F5B] text-[26px] font-semibold font-[Overpass] leading-8 lg:text-left">Powerful tooling</h1>
                 <p class="text-center mt-4 font-thin font-[Overpass] leading-7 lg:text-left">
                     Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
@@ -179,9 +162,9 @@
   <!-- Footer -->
   <footer>
     <div class="flex flex-col bg-[#25252D] rounded-tr-[90px] text-white font-[Ubuntu] items-center p-16
-    text-lg gap-12 mt-24 lg:flex-row lg:justify-between lg:items-start">
+    text-lg gap-12 mt-24 lg:flex-row lg:justify-between lg:items-start xl:px-32">
         <div class="mb-8 lg:pt-12">
-            <img class="scale-125 " src="images/logo.svg" alt="">
+            <img class="scale-125 hover:cursor-pointer" src="images/logo.svg" alt="">
         </div>
         <div class="flex flex-col items-center gap-2 lg:items-start">
             <h4 class="font-semibold mb-4">Product</h4>
